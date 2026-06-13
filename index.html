@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="google-site-verification" content="dk8AFNIRQk4_OOJJXYLBlxyOM_RJoBP9wGOuFmbGcA4" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Link Room helps you discover websites quickly. Search thousands of websites from one place.">
+    <title>The Link Room</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <!-- Three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+      <link rel="stylesheet" href="css/style.css">
++ <link rel="stylesheet" href="css/hexagon-bg.css">
+</head>
+<body>
+    
+    <div class="mobile-banner">
+    Mobile users can search any website directly.
+    For the full The Link Room experience, open this site in Desktop Mode.
+</div>
+
+   <div class="top-links">
+    <a href="#" id="aboutBtn">About</a>
+    <a href="#" id="contactBtn">Contact</a>
+    <a href="#" id="privacyBtn">Privacy Policy</a>
+</div>
+
+<div class="info-popup" id="infoPopup">
+    <button class="close-btn" id="closePopup">✕</button>
+
+    <h2 id="popupTitle">About</h2>
+
+    <p id="popupContent">
+        The Link Room is a modern website discovery platform designed to help users quickly find and access websites from across the internet.
+
+        Our goal is to provide a fast, clean, and user-friendly search experience where users can discover popular websites, online tools, social platforms, learning resources, and much more in one place.
+
+        Whether you're looking for productivity tools, entertainment platforms, developer resources, or everyday websites, The Link Room makes finding them simple and efficient.
+    </p>
+</div>
+
+    
+    <div id="canvas-container"></div>
+
+    
+    <div class="app-container">
+        
+        <aside class="sidebar">
+            <div class="sidebar-top">
+                <div class="logo">
+    <span class="web">The</span><span class="core">Link Room</span>
+</div>
+
+                
+
+            </div>
+            <div class="sidebar-middle">
+                <div class="nav-title">Popular Sites</div>
+                <nav class="matrix-stream-nav">
+                    <div class="stream-track">
+                        <ul>
+    <li><a href="https://www.google.com" target="_blank">Google</a></li>
+    <li><a href="https://www.youtube.com" target="_blank">YouTube</a></li>
+    <li><a href="https://chatgpt.com" target="_blank">ChatGPT</a></li>
+    <li><a href="https://mail.google.com" target="_blank">Gmail</a></li>
+    <li><a href="https://web.whatsapp.com" target="_blank">WhatsApp</a></li>
+    <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+    <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+    <li><a href="https://www.linkedin.com" target="_blank">LinkedIn</a></li>
+    <li><a href="https://github.com" target="_blank">GitHub</a></li>
+    <li><a href="https://www.tradingview.com" target="_blank">TradingView</a></li>
+    <li><a href="https://www.moneycontrol.com" target="_blank">Moneycontrol</a></li>
+    <li><a href="https://www.amazon.in" target="_blank">Amazon</a></li>
+    <li><a href="https://www.flipkart.com" target="_blank">Flipkart</a></li>
+    <li><a href="https://www.netflix.com" target="_blank">Netflix</a></li>
+    <li><a href="https://open.spotify.com" target="_blank">Spotify</a></li>
+    <li><a href="https://www.reddit.com" target="_blank">Reddit</a></li>
+    <li><a href="https://www.canva.com" target="_blank">Canva</a></li>
+    <li><a href="https://zoom.us" target="_blank">Zoom</a></li>
+    <li><a href="https://www.coursera.org" target="_blank">Coursera</a></li>
+    <li><a href="https://www.udemy.com" target="_blank">Udemy</a></li>
+</ul>
+                    </div>
+                </nav>
+            </div>
+            <div class="sidebar-bottom">
+                <a href="#" class="contact-link">Contact Us: thelinkroomofficial@gmail.com</a>
+            </div>
+        </aside>
+        
+        <main class="main-content">
+            <section class="hero-section">
+                <h1 class="hero-title">
+                    <div class="line">Everything on the Web.</div>
+                    <div class="line">One Place.</div>
+                </h1>
+                
+                <div class="search-container">
+                    <div class="search-bar-wrapper">
+                        <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                        <input type="text" class="search-input" placeholder="Search any website...">
+                        <div class="search-suggestions"></div>
+                        
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    + <script src="js/hexagon-bg.js"></script>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
