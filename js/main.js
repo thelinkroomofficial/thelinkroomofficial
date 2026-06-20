@@ -467,8 +467,20 @@ document.addEventListener("DOMContentLoaded", () => {
             • We do not require user registration.<br>
             • We do not store personal data.<br>
             • External websites belong to their respective owners.<br>
-            • We may use analytics and cookies to improve user experience.
-        `;
+            • We may use analytics and cookies to improve user experience.<br><br>
+           
+            Important Notice.<br><br>   
+
+            The Link Room is currently under active development.
+
+            Our website directory is continuously being expanded and updated. 
+            While we strive to provide accurate and comprehensive results,
+            some websites may not yet be listed.
+            If you are unable to find a specific website,
+            please contact us through our support email.
+            We will do our best to include it in future updates.
+            Thank you for helping us improve The Link Room.
+        `;            
     });
 
     // Close Popup
