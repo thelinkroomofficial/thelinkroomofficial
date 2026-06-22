@@ -428,15 +428,22 @@ document.addEventListener("DOMContentLoaded", () => {
     const closePopup = document.getElementById("closePopup");
 
     // About
-    aboutBtn.addEventListener("click", (e) => {
+     aboutBtn.addEventListener("click", (e) => {
         e.preventDefault();
 
         popup.style.display = "block";
 
         popupTitle.textContent = "About The Link Room";
 
-        popupContent.textContent =
-        "The Link Room is a modern website discovery platform that helps users quickly find websites through a clean and futuristic search experience.";
+        popupContent.textContent = `
+            The Link Room is a platform designed to help users quickly discover websites from across the internet in one place.
+
+            We are currently expanding and updating our website database. Some websites may not yet be available in search results.
+
+            If you cannot find a website you are looking for, please contact us and we will review and add it in a future update.
+
+            Thank you for your patience and support as we continue improving the platform.`;
+
     });
 
     // Contact
@@ -448,7 +455,12 @@ document.addEventListener("DOMContentLoaded", () => {
         popupTitle.textContent = "Contact";
 
         popupContent.innerHTML =
-        "Email: thelinkroomofficial@gmail.com";
+        "# Contact Us<br><br>" +
+            "Need help or cannot find a website?<br><br>" +
+            "Email us at:<br><br>" +
+            "[thelinkroomofficial@gmail.com](mailto:thelinkroomofficial@gmail.com)<br><br>" +
+            "If a website is missing from our directory, please send us the website name and URL. We will review it and add it to our database if appropriate.<br><br>" +
+            "We appreciate your feedback and suggestions.";
         
     });
 
