@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -14,7 +13,7 @@
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="32x32" href="logo.svg">
-<link rel="apple-touch-icon" href="logo.svg">
+    <link rel="apple-touch-icon" href="logo.svg">
 
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-2M61DX7MYN"></script>
@@ -30,9 +29,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
 
+    <!-- FontAwesome for the futuristic icon background -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/hexagon-bg.css">
+    <link rel="stylesheet" href="css/icon-bg.css">
 
     <!-- GSAP -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
@@ -42,12 +44,17 @@
 </head>
 <body>
     
+    <!-- Futuristic Glass Chamber Background -->
+    <div id="icon-bg-container"></div>
+    <div id="glass-layer"></div>
+
     <div class="mobile-banner">
     Mobile users can search any website directly.
     For the full The Link Room experience, open this site in Desktop Mode.
-</div>
+    </div>
 
    <div class="top-links">
+    <a href="#" id="topSitesBtn">Top Websites</a>
     <a href="#" id="aboutBtn">About</a>
     <a href="#" id="contactBtn">Contact</a>
     <a href="#" id="privacyBtn">Privacy Policy</a>
@@ -67,10 +74,8 @@
     </p>
 </div>
 
-    
     <div id="canvas-container"></div>
 
-    
     <div class="app-container">
         
         <aside class="sidebar">
@@ -79,11 +84,9 @@
     <span class="web">The</span><span class="core">Link Room</span>
 </div>
 
-                
-
             </div>
             <div class="sidebar-middle">
-                <div class="nav-title">Popular Sites</div>
+                <div class="nav-title">Top Websites</div>
                 <nav class="matrix-stream-nav">
                     <div class="stream-track">
                         <ul>
@@ -111,6 +114,10 @@
                     </div>
                 </nav>
             </div>
+            <div class="promo-box">
+                 <p> Promote Your Website</p>
+                <span>Contact us to get featured here.</span>
+            </div>
             <div class="sidebar-bottom">
                 <a href="#" class="contact-link">Contact Us: thelinkroomofficial@gmail.com</a>
             </div>
@@ -123,6 +130,10 @@
                     <div class="line">One Place.</div>
                 </h1>
                 
+                <div class="infinity-badge">
+                    ∞ Websites • Find Websites in Seconds
+                </div>
+
                 <div class="search-container">
                     <div class="search-bar-wrapper">
                         <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -138,8 +149,7 @@
         </main>
     </div>
 
-    + <script src="js/hexagon-bg.js"></script>
-
+    <script src="js/icon-bg.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
