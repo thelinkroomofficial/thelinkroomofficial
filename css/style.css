@@ -375,7 +375,7 @@ body {
 .search-bar-wrapper:focus-within {
     background: rgba(255,255,255,0.035);
     border-color: rgba(255,255,255,0.12);
-    transform: scale(1.01);
+    
 }
 
 .search-icon {
@@ -465,6 +465,7 @@ body {
         font-size: 1.2rem;
         padding: 14px 0;
     }
+    
 }
 
 /* Ultrawide Screens */
@@ -535,6 +536,8 @@ body {
     .hero-section{
         padding-top:80px;
     }
+
+    
 }
 
 .top-links{
@@ -622,5 +625,114 @@ body {
         opacity:1;
         transform:translateY(0);
     }
+}
+
+.infinity-badge{
+    display: inline-block;
+    margin-bottom: 25px;
+    padding: 10px 20px;
+    border-radius: 30px;
+
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.12);
+
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+
+    backdrop-filter: blur(10px);
+}
+
+/* -----------------------------
+   Top Websites Popup 
+   ----------------------------- */
+.info-popup a{
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0.3s ease;
+    font-weight: 500;
+}
+
+.info-popup a:hover{
+    color: #bfcfff;
+    text-shadow: 0 0 10px rgba(224,229,255,0.5);
+}
+
+/* -----------------------------
+   Top Websites Popup
+   ----------------------------- */
+   #topSitesBtn{
+    padding: 6px 12px;
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.10);
+    border-radius: 12px;
+    
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    color: #fff;
+    text-decoration: none;
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+/* Default: Desktop par hide */
+#topSitesBtn{
+    display:none;
+    transform: translateX(-80px);
+}
+
+
+/* Sirf Mobile par show */
+@media (max-width:768px){
+
+    #topSitesBtn{
+        display:inline-block;
+
+        padding:6px 12px;
+        background:rgba(255,255,255,0.08);
+        border:1px solid rgba(255,255,255,0.10);
+        border-radius:12px;
+
+        backdrop-filter:blur(12px);
+        -webkit-backdrop-filter:blur(12px);
+
+        color:#fff;
+        text-decoration:none;
+        font-size:12px;
+        white-space:nowrap;
+    }
+
+}
+
+.top-sites-popup{
+    display:none;
+    position:absolute;
+    top:65px;
+    left:10px;
+
+    width:180px;
+
+    background:rgba(15,15,15,0.85);
+    backdrop-filter:blur(15px);
+
+    border:1px solid rgba(255,255,255,0.08);
+    border-radius:12px;
+
+    padding:10px;
+    z-index:9999;
+}
+
+.top-sites-popup a{
+    display:block;
+    color:white;
+    text-decoration:none;
+    padding:8px 10px;
+    border-radius:8px;
+}
+
+.top-sites-popup a:hover{
+    background:rgba(255,255,255,0.08);
 }
 
