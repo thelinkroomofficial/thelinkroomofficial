@@ -1,0 +1,57 @@
+#icon-bg-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -2;
+    overflow: hidden;
+    background: #030305; /* Deep futuristic black matching the theme */
+}
+
+/* Network Canvas Layer */
+#network-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
+    opacity: 0.8;
+}
+
+#glass-layer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    /* Ultra-transparent cinematic tint */
+    background: rgba(3, 3, 5, 0.35);
+    /* Reduced blur for Glass Chamber Effect - keeping it extremely minimal to retain visibility */
+    backdrop-filter: blur(0.3px);
+    -webkit-backdrop-filter: blur(0.3px);
+    pointer-events: none;
+    /* Subtle inner glow */
+    box-shadow: inset 0 0 120px rgba(255, 255, 255, 0.02);
+    opacity: 0.35;
+}
+
+.bg-icon {
+    position: absolute;
+    will-change: transform, opacity;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    /* Motion is now handled by JS, so no CSS animations needed here */
+}
+
+/* Google needs a gradient text to look premium since it's a multi-color logo */
+.bg-icon.fa-google {
+    background: linear-gradient(to right, #4285F4, #EA4335, #FBBC05, #34A853);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
